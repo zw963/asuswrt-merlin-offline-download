@@ -117,8 +117,14 @@ aria2c daemon. ``http://token:你的密码@192.168.1.1:6800/jsonrpc``
 ## 感谢
 
 [YAAW](https://github.com/shadowsocks/shadowsocks-libev)
+
 [aria2](https://aria2.github.io)
+
 [nginx](http://nginx.org)
+
 [asuswrt-merlin](https://github.com/RMerl/asuswrt-merlin)
+
 [Entware-ng](https://github.com/Entware-ng/Entware-ng)
 
+## 其他
+[使用华硕 merlin 架设透明代理](https://github.com/zw963/asuswrt-merlin-transparent-proxy)

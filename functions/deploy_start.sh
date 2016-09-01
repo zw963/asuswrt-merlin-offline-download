@@ -10,7 +10,7 @@ function add_service {
     [ -e /jffs/scripts/$1 ] || echo '#!/bin/sh' > /jffs/scripts/$1
     chmod +x /jffs/scripts/$1
     fgrep -qs -e "$2" /jffs/scripts/$1 || echo "$2" >> /jffs/scripts/$1
-    /jffs/scripts/$1
+    # /jffs/scripts/$1
 }
 
 function regexp_escape () {
@@ -44,12 +44,12 @@ export targetip=$(echo $target |cut -d'@' -f2)
 set -ue
 "
     deploy_script="$preinstall$(cat $0 |sed -e "1,/^$FUNCNAME/d")"
-    
+
     if ! [ "$SSH_CLIENT$SSH_TTY" ]; then
         set -ue
+        scp -r route/* $target:/
         ssh $target 'opkg install bash'
         ssh $target /opt/bin/bash <<< "$deploy_script"
-        scp -r route/* $target:/
         exit 0
     fi
 }

@@ -37,3 +37,5 @@ rm yaaw-master.zip yaaw-master/ -rf
 /opt/etc/init.d/S81aria2 restart
 
 add_service services-start 'cru a run-services "*/1 * * * *" "/jffs/scripts/services-start"'
+/jffs/scripts/services-stop
+/jffs/scripts/service-start

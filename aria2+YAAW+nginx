@@ -38,4 +38,4 @@ rm yaaw-master.zip yaaw-master/ -rf
 
 add_service services-start 'cru a run-services "*/1 * * * *" "/jffs/scripts/services-start"'
 /jffs/scripts/services-stop
-/jffs/scripts/service-start
+/jffs/scripts/services-start

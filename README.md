@@ -64,7 +64,7 @@ admin@RT-AC66U-20F0:/tmp/mnt/sda/asusware/etc# entware-setup.sh
 首先克隆项目到本地.
 
 ```sh
-$ git clone https://github.com/zw963/asuswrt-merlin-transparent-proxy ~/
+$ git clone https://github.com/zw963/asuswrt-merlin-offline-download.git ~/
 ```
 
 ### 修改配置文件
@@ -88,7 +88,7 @@ aria2c daemon. ``http://token:你的密码@192.168.1.1:6800/jsonrpc``
 请尽量采用 public key 免密码方式通过访问你的路由器, 否则这个脚本会停下来多次让你输入 ssh 密码，不胜其烦。
 即：网页中，SSH Authentication key 部分加入你的 public key, 具体使用请自行度娘解决。
 
-当然，如果你不放心，完全可以选择照着[部署脚本](https://github.com/zw963/asuswrt-merlin-transparent-proxy/blob/master/ss+dnsmasq+chinadns)逐条自行复制粘帖即可。
+当然，如果你不放心，完全可以选择照着[部署脚本](https://github.com/zw963/asuswrt-merlin-offline-download/blob/master/aria2%2BYAAW%2Bnginx)逐条自行复制粘帖即可。
 相信我，部署脚本真的很简单，而且添加了大量的注释，配合 route 目录下的文件，看看就应该懂。
 
 假设我的路由器 ip 地址是 192.168.1.1, 并且开放了 22 的 ssh 端口, 则运行以下命令即可。
